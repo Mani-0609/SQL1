@@ -1,0 +1,75 @@
+Create table studentinfo
+(
+ID number(3),
+Name varchar(20),
+Gender varchar(8),
+Branch varchar(10),
+Batch varchar(10),
+Mail id varchar(30),
+Mobile number(10),
+);
+insert into studentinfo values(101,'arhaan','male','cse','1996-2000','arhaanshaik03@gmail.com',9492134760);
+insert into studentinfo values(102,'sumitra','female','eee','1997-2001','sumitrareddy01@gmail.com',9213468792);
+insert into studentinfo values(103,'nivishka','female','ece','1998-2002','nivishkasrujana06@gmail.com,773199045);
+insert into studentinfo values(104,'vijay','male','mec','1999-2003','vijayreddy01@gmail.com,835468921);
+insert into studentinfo values(105,'suresh',male,'eee','2000-2004','sureshkatika09@gmail.com,9988645329);
+insert into studentinfo values(106,'rohit','male'cse','2001-2005','sairohitnarahar02@gmail.com,765493290);
+insert into studentinfo values(107,'soumya','female','civil','2002-2006','soumyareddy123@gmail.com,9876023149);
+insert into studentinfo values(108,'kavya','female','mech','2003-2007','kavyareddy456@gmail.com,987723101);
+insert into studentinfo values(109,'suresh','male','ece','2004-2008','sureshreddy09@gmail.com,887645321);
+insert into studentinfo values(110,'mahi','female','cse','2005-2009','mahinrushika06@gmail.com,945210987);
+
+Display all Table details?
+select * from the table;
+WAQ to save dml Command
+commit;
+delete from student info
+where idnumber=105;
+Recover deleted details?
+Rollback;
+update placed students details
+update studentinfo
+set companyname='wipro'
+where id=101;
+update studentinfo
+set companyname='IBM'
+where id=102;
+update studentinfo
+set companyname='capgemini'
+where id=103;
+update studentinfo
+set companyname='TCS'
+where id=104;
+update studentinfo
+set companyname='infosys'
+where id=105;
+update studentinfo
+set comapanyname='accenture'
+where id=109;
+upadte studentinfo
+set comapanyname='notplaced'
+where id=(106,107,108,110);
+select * from studentinfo;
+wAQ TO ADD a column
+alter table studentinfo
+add(company name varchar(20));
+rename table as Name of the company
+wAQ to get the list of cse students
+select * from studentinfo
+where branch='cse';
+WAQ details of placed students?
+WAQ to get details whose name start with n
+select * from studentinfo
+where name like'n%';
+wAQ to get the count of students in an asc order
+group by students
+order by count(*)asc;
+
+
+
+
+
+
+
+
+
